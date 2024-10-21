@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOCERIA</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Lista Menu 1</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Lista Menu 2</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Lista Menu 3</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Lista Menu 4</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Lista Menu 5</a>
+        </li>
+      </ul>
+      <img src="img/logo.png" alt="Logo da Alurabooks" claLista Menu ss="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">sweet Rain
+    </h2>
+    <p class="banner__texto">Onde cada doce é uma gota de felicidade!</p>
+    <input type="search" class="banner__pesquisa" placeholder="PERGUNTA">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/IMAGEM 1.png"></div>
+        <div class="swiper-slide"><img src="img/IMAGEM 2.png"></div>
+        <div class="swiper-slide"><img src="img/IMAGEM 3.png"></div>
+        <div class="swiper-slide">
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">
+            Bolo de Morango Artesanal 🍓</h2>
+          <p class="descrição__texto">Massa fofinha de baunilha, recheio cremoso de chantilly e morangos frescos. Cobertura leve com decoração de morangos inteiros. Perfeito para festas e momentos especiais!
+            
+          </p>
+        </div>
+        <img src="img/IMAGEM 3.png" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/IMAGEM 1.png"></div>
+        <div class="swiper-slide"><img src="img/IMAGEM 2.png"></div>
+        <div class="swiper-slide"><img src="img/IMAGEM 3.png">        </div>
+        <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia front end"></div>
+        <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre portugol"></div>
+        <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    
+
+      
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">PRODUTOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">PRODUTO 1</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">PRODUTO 2</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">PRODUTO 3</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">PRODUTO 4</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">PRODUTO 5</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">PRODUTO 6</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">PRODUTO 7</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">PRODUTO 8</a>
+      </li>
+    </ul>
+  </section>
+
+  
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">NOME DO SITE</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
